@@ -1,0 +1,281 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Шапка */
+header {
+    background-color: #604caf;
+    color: white;
+    padding: 15px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Секции */
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Контейнер */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Баннеры */
+.banner {
+    width: 100%;
+    background: #a48df5; /* Яркий фон для событий */
+    padding: 30px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.event {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-15px);
+}
+
+.event h3 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.event p {
+    font-size: 16px;
+    color: #777777;
+    margin: 10px 0;
+}
+
+.event .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7563b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.event .btn:hover {
+    background: #e67e00;
+}
+
+/* Баннер для тестов */
+#test-banner {
+    margin-top: 40px;
+}
+
+#test-banner .banner {
+    background:  #a48df5; /* Яркий фон для тестов */
+}
+
+#test-banner .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#test-banner .event {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#test-banner .event:hover {
+    transform: translateY(-15px);
+}
+
+#test-banner .event h3 {
+    font-size: 24px;
+    color: #333333;
+}
+
+#test-banner .event p {
+    font-size: 16px;
+    color: #777777;
+    margin: 10px 0;
+}
+
+#test-banner .event .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7563b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#test-banner .event .btn:hover {
+    background:   #e67e00;
+}
+
+.hover-image {
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 500px; /* Задаем ширину изображения */
+    transition: opacity 100.3s ease; /* Плавная смена */
+}
+
+.hover-image {
+    width: 40%; /* Можно менять ширину */
+    height: 500px; /* Высота вылета */
+    background: #7563b5; /* Цвет фона */
+    margin: 20px auto; /* Центрирование по горизонтали */
+    border-radius: 10px; /* Скругленные края */
+}
+
+
+.hover-image:hover {
+    content: url("image2.png"); /* Меняет изображение */
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Тесты и Викторины */
+#tests {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+#tests h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#test-list {
+    margin-top: 20px;
+}
+
+.test-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.test-item h4 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.test-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #7563b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.test-item a:hover {
+    background:  #7563b5;
+}
+
+/* Таблица расписания */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #a48df5;
+    color: white;
+}
+
+/* Кнопки для выбора классов */
+.class-selection {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.class-button {
+    background-color: #a48df5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.class-button.active {
+    background-color: #45a049; /* Измени цвет на свой вкус */
+}
+
+.class-button:hover {
+    background-color: #45a049;
+}
